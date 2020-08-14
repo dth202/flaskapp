@@ -6,10 +6,10 @@ LABEL maintainer="Dallas Harris"
 
 RUN pip install flask
 
-COPY src/ /src/
+COPY src /src/
 
 EXPOSE 5000
 
-VOLUME ["/src/"]
+VOLUME ["/src"]
 
 ENTRYPOINT ["python", "/src/app.py"]
