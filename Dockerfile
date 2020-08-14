@@ -6,10 +6,8 @@ LABEL maintainer="Dallas Harris"
 
 RUN pip install flask
 
-COPY src /src/
+COPY web /app
+WORKDIR /app
 
-EXPOSE 5000
-
-VOLUME ["/src"]
-
-ENTRYPOINT ["python", "/src/app.py"]
+ENTRYPOINT ["python"]
+CMD ["app.py"]
