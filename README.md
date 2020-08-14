@@ -11,21 +11,21 @@ This is a forked project from jcdemo/flaskapp. Thank him for unknowingly providi
 
 
 ## Simple usage
-
+```
 docker run \
   -v flask_app:/srv \
   dth202/flaskapp
-
+```
 
 ## Advanced Usage
-
+```
 docker run \
   --name myapp \
   -d \
   -v myapp_app:/srv \
   --restart always \
   dth202/flaskapp
-
+```
 
 
 
